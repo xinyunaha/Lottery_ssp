@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253238"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="200px"
+        android:layout_gravity="center"
+        android:background="@mipmap/icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="200px"
+        android:text="邮箱"
+        android:textColor="#607e89"
+        android:textSize="50px" />
+
+    <EditText
+        android:id="@+id/InputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:textColor="#90a4ae"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:theme="@style/LoginEditText" />
+
+    <TextView
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="80px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="密码"
+        android:textColor="#607e89" />
+
+    <EditText
+        android:id="@+id/InputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:theme="@style/LoginEditText"
+        android:ems="10"
+        android:textColor="#90a4ae"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_marginRight="80px"
+        android:id="@+id/ForgotPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#728f97"
+        android:textSize="40px"
+        android:gravity="right"
+        android:text="忘记密码?" />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:textSize="50px"
+        android:textColor="#243137"
+        android:background="@drawable/login_btn_selector"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击登录"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="80px"
+        android:gravity="top|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没有账号？"
+            android:textColor="#90a2ac"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/Registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="点击注册"
+            android:textColor="#7ec384"
+            android:textSize="50px" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

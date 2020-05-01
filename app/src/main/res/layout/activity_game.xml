@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253238"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="80px"
+                android:text="欢迎使用欧气小助手"
+                android:textSize="50px"
+                android:textColor="#b0d5df"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+
+                android:topLeftRadius="20dp"
+                android:background="#f0945d"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:text="剩余流量："
+                    android:textColor="#253238"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:id="@+id/userflow_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="None"
+                    android:textColor="#bdd5ea"
+                    android:textSize="60px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="370px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="#22a2c3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="到期时间："
+                    android:textColor="#253238"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/usertime_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="None"
+                    android:textColor="#bdd5ea"
+                    android:textSize="60px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="450px">
+
+                <LinearLayout
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ThisGet_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="120px"
+                        android:layout_marginRight="20px"
+                        android:background="#20a162"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="本次所得:"
+                            android:textColor="#253238"
+                            android:textSize="50px" />
+
+                        <TextView
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:id="@+id/ThisGet_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="0 MB"
+                            android:textColor="#bdd5ea"
+                            android:textSize="60px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="120px"
+                        android:layout_marginRight="20px"
+                        android:background="#20a162"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="成功次数："
+                            android:textColor="#253238"
+                            android:textSize="50px" />
+
+                        <TextView
+                            android:id="@+id/SuccessTimes_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:gravity="right"
+                            android:text="0 次"
+                            android:textColor="#bdd5ea"
+                            android:textSize="60px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/AllGet_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="120px"
+                        android:layout_marginRight="20px"
+                        android:background="#20a162"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="累计获得:"
+                            android:textColor="#253238"
+                            android:textSize="50px" />
+
+                        <TextView
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:id="@+id/AllGet_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="0 MB"
+                            android:textColor="#bdd5ea"
+                            android:textSize="60px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/WinRate_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="120px"
+                        android:layout_marginRight="20px"
+                        android:background="#20a162"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:text="综合胜率"
+                            android:textColor="#253238"
+                            android:textSize="50px" />
+
+                        <TextView
+                            android:id="@+id/WinRate_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:gravity="right"
+                            android:text="0 %"
+                            android:textColor="#bdd5ea"
+                            android:textSize="60px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/Game_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:layout_marginBottom="100px"
+            android:background="@drawable/game_btn_selector"
+            android:text="Start !!!"
+            android:textAllCaps="false"
+            android:textColor="#253238"
+            android:textSize="60px" />
+        <ImageView
+            android:id="@+id/sync"
+            android:layout_gravity="right"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="180px"
+            android:background="@drawable/ic_sync_black_24dp" />
+    </FrameLayout>
+
+</LinearLayout>
