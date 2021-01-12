@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_registered.*
 import okhttp3.FormBody
 
 class RegisteredActivity : Activity() {
-    private val BaseUrl = "https://lsj.world"
+    private val BaseUrl = "Please enter your airport url."
     @SuppressLint("ShowToast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
